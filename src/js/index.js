@@ -106,7 +106,7 @@ elements.shopping.addEventListener('click', (e) => {
     } else if (e.target.matches('.shopping__count-value')) {
         const val = parseFloat(e.target.value, 10)
         state.list.updateCount(id, val)
-        console.log(state.list)
+        // console.log(state.list)
     }
 })
 elements.recipe.addEventListener('click', async (e) => {
@@ -139,7 +139,7 @@ const controlLike = () => {
         // likesView.toggleLikeBtn(true)
         recipeView.renderRecipe(state.recipe, true)
         // Add like to UI list
-        console.log(state.likes)
+        // console.log(state.likes)
     } else {
         //Remove like from the state
         state.likes.deleteLike(currID)
@@ -148,7 +148,7 @@ const controlLike = () => {
         // likesView.toggleLikeBtn(false)
         recipeView.renderRecipe(state.recipe, false)
         // Remove like to UI list
-        console.log(state.likes)
+        // console.log(state.likes)
     }
 
     // likesView.toggleLikeMenu(state.likes.getNumLikes())
